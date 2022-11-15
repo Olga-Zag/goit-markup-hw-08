@@ -1,0 +1,153 @@
+.footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $footer-main-color;
+}
+
+.footer__box {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+
+    color: $main-back-color;
+}
+
+.footer__item {
+    margin-bottom: 9px;
+}
+
+.footer__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.footer__list {
+   @extend %list;
+}
+
+.footer__address {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    font-style: normal;
+    color: $main-back-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+    color: $focus-color;
+}
+}
+.footer__contact {
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+   color: $focus-color;
+}
+}
+
+.footer__net {
+    color: $main-back-color;
+    margin-left: 70px;
+}
+
+.footer__net-title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__net-list {
+    @extend %list;
+    display: flex;
+
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer__net-link {
+
+    @extend %net-link;
+    background-color: rgba(255, 255, 255, 0.1);
+
+&:hover,
+&:focus {
+    background-color: $focus-color;
+}
+}
+.footer__net-icon {
+    fill: currentColor;
+}
+
+.footer__form {
+    display: block;
+    color: $main-back-color;
+}
+
+.footer__input {
+    display: block;
+    left: 0;
+    width: 358px;
+    margin-right: 12px;
+
+    padding: 16px 15px 16px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: $footer-main-color;
+    border: 1px solid;
+    border-color: $main-back-color;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    outline: none;
+}
+
+.footer__email-title {
+    display: block;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+.footer__input-email {
+    display: flex;
+}
+
+.footer__button {
+    @extend %button;
+    position: relative;
+    left: 0;
+    padding-left: 0px;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+}
+
+.footer__send-icon {
+    position: absolute;
+    fill: $main-back-color;
+    align-self: center; 
+    margin-left: 10px;
+}

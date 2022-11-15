@@ -1,0 +1,32 @@
+.features__box {
+    @extend %list;
+    display: flex;
+    gap: 30px;
+}
+
+.features__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    min-height: 120px;
+    margin-bottom: 30px;
+    background-color: $add-back-color;
+}
+
+.features__title { 
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.features__text {
+    margin-top: 0;
+
+    color: $alt-color;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+}

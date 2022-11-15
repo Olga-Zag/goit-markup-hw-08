@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__menu container">
+        <nav class="header__main-nav">
+          <a href="/" class="logo header__logo"
+            ><span class="logo-span">Web</span>Studio</a
+          >
+          <ul class="site-nav">
+            <li class="header__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="header__item">
+              <a
+                class="site-nav__link site-nav__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header__item">
+              <a class="site-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header__contacts">
+          <li class="header__item">
+            <a class="header__contact" href="mailto:info@devstudio.com">
+              <svg width="16" height="12" class="header__contact-icon">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="header__item">
+            <a class="header__contact" href="tel:+380961111111">
+              <svg width="10" height="16" class="header__contact-icon">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="product">
+        <div class="container">
+          <ul class="product__buttons">
+            <li>
+              <button class="product__button-filter" type="button">Усі</button>
+            </li>
+            <li>
+              <button class="product__button-filter" type="Button">
+                Веб-сайти
+              </button>
+            </li>
+            <li>
+              <button class="product__button-filter" type="Button">
+                Додатки
+              </button>
+            </li>
+            <li>
+              <button class="product__button-filter" type="Button">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button class="product__button-filter" type="Button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="product__list">
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product1.jpg"
+                    alt="Екран Сайту Технокряк"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Технокряк</h3>
+                  <p class="product__kind">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product2.jpg"
+                    alt="Постер баскетбольної гри"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="product__kind">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product3.jpg"
+                    alt="Заставка додатка ресторану"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Ресторан Seafood</h3>
+                  <p class="product__kind">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product4.jpg"
+                    alt="Фото навушників"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Проєкт Prime</h3>
+                  <p class="product__kind">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product5.jpg"
+                    alt="дві коробки"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Проєкт Boxes</h3>
+                  <p class="product__kind">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product6.jpg"
+                    alt="Екран Сайту Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Inspiration has no Borders</h3>
+                  <p class="product__kind">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product7.jpg"
+                    alt="Розгорнута книга"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Видання Limited Edition</h3>
+                  <p class="product__kind">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product8.jpg"
+                    alt="Паперовий ярлик"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Проєкт LAB</h3>
+                  <p class="product__kind">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="product__ref" href="">
+                <div class="product__photo">
+                  <img
+                    src="./images/product9.jpg"
+                    alt="Лептоп заставка Growing Business"
+                    width="370"
+                  />
+                  <div class="product__text">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <h3 class="product__name">Growing Business</h3>
+                  <p class="product__kind">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__box container">
+        <div>
+          <a href="#" class="logo footer__logo"
+            ><span class="logo-span">Web</span>Studio</a
+          >
+          <address>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a
+                  class="footer__address"
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__contact" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="footer__contact" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__net">
+          <p class="footer__net-title">Приєднуйтесь</p>
+          <ul class="footer__net-list">
+            <li>
+              <a href="" class="footer__net-link">
+                <svg class="footer__net-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__net-link">
+                <svg class="footer__net-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__net-link">
+                <svg class="footer__net-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="" class="footer__net-link">
+                <svg class="footer__net-icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__form">
+          <p class="footer__email-title">Підпишіться на розсилку</p>
+          <form class="footer__input-email">
+            <input
+              class="footer__input"
+              name="email"
+              id="email"
+              type="text"
+              placeholder="E-mail"
+            />
+            <button class="footer__button" type="submit">
+              Підписатися
+              <span>
+                <svg class="footer__send-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

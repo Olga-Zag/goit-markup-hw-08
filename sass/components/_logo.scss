@@ -1,0 +1,14 @@
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  text-decoration: none;
+}
+
+.logo-span {
+  @extend .logo;
+  color: $focus-color;
+ 
+}

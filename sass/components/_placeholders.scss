@@ -1,0 +1,35 @@
+%list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+%button {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: $focus-color;
+    border-radius: 4px;
+
+    background-color: $focus-color;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    letter-spacing: 0.06em;
+    color: $main-back-color;
+    cursor: pointer;
+}
+%net-link {
+        width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+            border-radius: 50%;
+            color: $main-back-color;
+        
+            transition-property: background-color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}

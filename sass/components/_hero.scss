@@ -1,0 +1,38 @@
+.hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    background-color: $footer-main-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/collegues.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-bottom: 200px;
+}
+
+.hero__title {
+    display: block;
+    max-width: 696px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $main-back-color;
+}
+
+.hero__button {
+    @extend %button;
+    padding: 8px 28px;
+    min-width: 216px;
+}

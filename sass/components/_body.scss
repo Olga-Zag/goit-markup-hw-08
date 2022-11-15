@@ -1,0 +1,15 @@
+
+body {
+    background-color: $main-back-color;
+    color: $main-font-color;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
