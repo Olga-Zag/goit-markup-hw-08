@@ -1,18 +1,40 @@
 .hero {
+
+    max-width: 480px;
+        height: 400px;
+        padding-top: 118px;
+        background-color: $footer-main-color;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/collegues.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        padding-bottom: 118px;
+
+        @media screen and (min-width:768px){
+            max-width: 768px;
+        }
+    @media screen and (min-width:1200px) {
+              
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
-    background-color: $footer-main-color;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),
-        url(../images/collegues.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-color: $footer-main-color;
+    // text-align: center;
+    // margin-left: auto;
+    // margin-right: auto;
+    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    //         rgba(47, 48, 58, 0.4)),
+    //     url(../images/collegues.jpg);
+    // background-position: center;
+    // background-repeat: no-repeat;
 
     padding-bottom: 200px;
+    }
 }
 
 .hero__title {

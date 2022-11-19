@@ -18,6 +18,7 @@
           <a href="/" class="logo header__logo"
             ><span class="logo-span">Web</span>Studio</a
           >
+   
           <ul class="site-nav">
             <li class="header__item">
               <a
@@ -33,6 +34,23 @@
               <a class="site-nav__link" href="">Контакти</a>
             </li>
           </ul>
+          <button
+          class="header__button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+          >
+          <svg width="40" height="40">
+            <use
+              class="header__button-close"
+              href="./images/icons.svg#icon-close-mob"
+            ></use>
+            <use
+              class="header__button-burger"
+              href="./images/icons.svg#icon-burger-mob"
+            ></use>
+          </svg>
+         </button>
         </nav>
 
         <ul class="header__contacts">
@@ -55,6 +73,7 @@
         </ul>
       </div>
     </header>
+
     <!-- Hero -->
     <main>
       <section class="section hero">
@@ -186,7 +205,7 @@
           </ul>
         </div>
       </section>
-      <!-- Чим ми займаємося -->
+      <!-- Чим ми займаємося
       <section class="photo-work section">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
@@ -205,9 +224,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Команда -->
-      <section class="command section">
+      <!-- <section class="command section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="command__list">
@@ -353,9 +372,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- клієнти -->
-      <section class="clients section">
+      <!-- <section class="clients section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -403,9 +422,20 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use
+            class="header__button-close"
+            href="./images/icons.svg#icon-close-mob"
+          ></use>
+        </svg>
+      </button>
+    </div>
+
+    <!-- <footer class="footer">
       <div class="footer__box container">
         <div>
           <a href="#" class="logo footer__logo"
@@ -489,7 +519,15 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

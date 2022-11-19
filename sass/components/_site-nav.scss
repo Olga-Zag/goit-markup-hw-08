@@ -1,6 +1,10 @@
 .site-nav {
+    display: none;
+    margin-left: 0;
+    @media screen and (min-width:480px) {
     display: flex;
     list-style: none;
+}
 }
 
 .header__item:not(:last-child) {
