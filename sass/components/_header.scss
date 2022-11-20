@@ -45,14 +45,13 @@
 
   display: flex;
   align-items: center;
+  background-color: $main-back-color;
 
   @media screen and (max-width:767px) {
     justify-content: space-between;
     flex-grow: 1;
   }
 
-  background-color: $main-back-color;
-  // padding-right: 15px;
 
 }
 
@@ -91,16 +90,15 @@
   }
 }
 
-
 .header__item-contact:nth-of-type(1) {
   margin-left: 50px;
   @media screen and (min-width:768px) and (max-width:1199px) {
-    padding-top: 21px;
+    padding-top: 16px;
   }
 }
 .header__item-contact:last-of-type {
   @media screen and (min-width:768px) and (max-width:1199px) {
-    padding-bottom:21px;
+    padding-bottom:16px;
   }
 }
 .header__contact {
@@ -123,6 +121,8 @@
 
   @media screen and (min-width:768px) and (max-width:1199px) {
     padding: 5px;
+    font-size: 12px;
+    line-height: calc(14 / 12);
   }
 
   &:hover,
