@@ -321,6 +321,14 @@ body.modal-open {
   overflow: hidden;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -661,9 +669,7 @@ body.modal-open {
 }
 
 .hero {
-  max-width: 480px;
-  height: 400px;
-  padding-top: 118px;
+  padding-top: 200px;
   background-color: #2f303a;
   text-align: center;
   margin-left: auto;
@@ -672,19 +678,19 @@ body.modal-open {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/collegues.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 118px;
+  background-size: cover;
+  padding-bottom: 200px;
 }
-@media screen and (min-width: 768px) {
+@media (max-width: 767px) {
   .hero {
-    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@1x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-device-pixel-ratio: 2) and (max-width: 767px), (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (min-resolution: 192dpi) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile@2x.jpg);
   }
 }
 
@@ -722,7 +728,6 @@ body.modal-open {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
 }
 @media screen and (min-width: 480px) {
   .backdrop {
@@ -740,6 +745,7 @@ body.modal-open {
 }
 
 .modal {
+  overflow-y: scroll;
   background-color: #ffffff;
   border-radius: 4px;
   padding: 40px;
@@ -1498,8 +1504,7 @@ img {
   height: 100vh;
   padding: 48px 40px;
   background-color: #ffffff;
-  z-index: 9;
-  display: none;
+  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1512,10 +1517,15 @@ img {
           justify-content: space-between;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 250ms ease-in-out;
-  transition: -webkit-transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out;
-  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (maxwidth: 480px) {
+  .menu__container {
+    display: none;
+  }
 }
 
 .menu__container.is-open {
@@ -1525,14 +1535,15 @@ img {
 
 .menu__container .menu__toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 10px;
+  right: 15px;
   background-color: #ffffff;
   border: none;
 }
 
 .menu__toggle:hover, .menu__toggle:focus {
-  color: #2196f3;
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 .menu__mobile-item {
@@ -1584,16 +1595,26 @@ img {
 }
 
 .menu__net-link {
-  color: #212121;
   text-decoration: none;
   cursor: pointer;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
+  display: block;
+  padding-left: auto;
+  padding-right: auto;
   color: #2196F3;
 }
 
 .menu__mobile-item .menu__mobile-link--current {
   color: #2196f3;
+}
+
+.menu__line {
+  width: 22px;
+  height: 1px;
+  background-color: rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }/*# sourceMappingURL=main.css.map */

@@ -1,40 +1,39 @@
 .hero {
 
-    max-width: 480px;
-        height: 400px;
-        padding-top: 118px;
-        background-color: $footer-main-color;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/collegues.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-    
-        padding-bottom: 118px;
-
-        @media screen and (min-width:768px){
-            max-width: 768px;
-        }
-    @media screen and (min-width:1200px) {
-              
-    max-width: 1600px;
-    height: 600px;
+    // display: block;
+    // max-width: 100%;
+    // height: auto;
+    // object-fit: cover;
+    // max-width: 1600px;
+    // height: 600px;
     padding-top: 200px;
-    // background-color: $footer-main-color;
-    // text-align: center;
-    // margin-left: auto;
-    // margin-right: auto;
-    // background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    //         rgba(47, 48, 58, 0.4)),
-    //     url(../images/collegues.jpg);
-    // background-position: center;
-    // background-repeat: no-repeat;
+    background-color: $footer-main-color;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/collegues.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     padding-bottom: 200px;
+
+    @media  (max-width: 767px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-mobile@1x.jpg);
     }
+
+    @media (min-device-pixel-ratio:2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width:767px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/hero-mobile@2x.jpg);
+    }
+
 }
 
 .hero__title {
