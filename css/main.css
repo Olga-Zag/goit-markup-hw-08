@@ -662,7 +662,7 @@ img {
   padding-top: 60px;
   padding-bottom: 0px;
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .section {
     padding-top: 94px;
   }
@@ -986,7 +986,12 @@ img {
   margin: -1px;
 }
 
-@media screen and (min-width: 768px) {
+@media (max-width: 1199px) {
+  .features__box {
+    padding-bottom: 60px;
+  }
+}
+@media (min-width: 768px) {
   .features__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -996,7 +1001,7 @@ img {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .features__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1066,6 +1071,13 @@ img {
   font-size: 36px;
   line-height: 1.1666666667;
 }
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.1785714286;
+  }
+}
 
 .photo-work {
   padding-bottom: 94px;
@@ -1126,14 +1138,15 @@ img {
   background-color: #f5f4fa;
 }
 
-.command__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .command__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .command__card {
@@ -1144,6 +1157,11 @@ img {
   background-color: #ffffff;
 }
 
+@media (max-width: 767px) {
+  .command__card + .command__card {
+    margin-top: 30px;
+  }
+}
 .command__name {
   display: block;
   padding-top: 30px;
@@ -1211,11 +1229,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
-
+@media (max-width: 1199px) {
+  .clients__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 .clients__icon {
   -webkit-transition-property: fill;
   transition-property: fill;
@@ -1236,7 +1256,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -1246,6 +1266,16 @@ img {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {

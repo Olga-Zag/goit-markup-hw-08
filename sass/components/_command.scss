@@ -1,23 +1,32 @@
 .command {
     text-align: center;
     padding-bottom: 94px;
-
     background-color: $add-back-color;
 }
 
 .command__list {
     @extend %list;
-    display: flex;
-    gap: 30px;
-    justify-content: space-between;
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 .command__card {
     margin-top: 0;
-     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: $main-back-color;
+}
+
+@media (max-width:767px) {
+    .command__card+.command__card {
+        margin-top: 30px;
+    }
 }
 
 .command__name {
@@ -34,7 +43,7 @@
     display: block;
     margin-top: 0;
     margin-bottom: 16px;
- 
+
     font-size: 16px;
     line-height: calc(19 / 16);
     color: $alt-color;
@@ -43,7 +52,7 @@
 .command__net-list {
     @extend %list;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     gap: 10px;
     padding-bottom: 30px;
 }
@@ -54,27 +63,27 @@
 }
 
 .command__net-link {
-@extend %net-link;
-        background-color: $main-back-color;
+    @extend %net-link;
+    background-color: $main-back-color;
 }
 
-.command__net-link{
+.command__net-link {
+
     &:hover,
-    &:focus{
-    background-color: $focus-color; 
-}
+    &:focus {
+        background-color: $focus-color;
+    }
 }
 
 .command__net-link {
     &:hover,
-    &:focus { 
-    .command__net-icon
-    {
-    fill: currentColor;
+    &:focus {
+        .command__net-icon {
+            fill: currentColor;
+        }
     }
 }
-}
-    
+
 .command__net-icon {
     fill: #afb1b8;
 

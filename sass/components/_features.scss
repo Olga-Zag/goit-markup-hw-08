@@ -1,12 +1,15 @@
 .features__box {
     @extend %list;
+    @media (max-width:1199px) {
+        padding-bottom: 60px;
+     }
     
-     @media screen and (min-width:768px) {
+     @media (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
      gap: 30px;
     }
-    @media screen and (min-width:1200px){
+    @media (min-width:1200px){
     display: flex;
     gap: 30px;
     }

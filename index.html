@@ -274,15 +274,27 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="photo-work__list">
             <li class="photo-work__item">
-              <img src="./images/work1.jpg"  srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x" alt="Фото клавіатура і планшет" />
+              <img
+                src="./images/work1.jpg"
+                srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
+                alt="Фото клавіатура і планшет"
+              />
               <p class="photo-work__kind">Дескопні додатки</p>
             </li>
             <li class="photo-work__item">
-              <img src="./images/work2.jpg"  srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x" alt="Фото рука з мобільним телефоном"/>
+              <img
+                src="./images/work2.jpg"
+                srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
+                alt="Фото рука з мобільним телефоном"
+              />
               <p class="photo-work__kind">Мобільні додатки</p>
             </li>
             <li class="photo-work__item">
-              <img  src="./images/work3.jpg"  srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x" alt="Фото палітра на планшеті" />
+              <img
+                src="./images/work3.jpg"
+                srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
+                alt="Фото палітра на планшеті"
+              />
               <p class="photo-work__kind">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -294,7 +306,30 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="command__list">
             <li class="command__card">
-              <img src="./images/photo1.jpg" alt="Фото співробітника 1" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo1_mob.jpg    1x,
+                    ./images/photo1_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo1_tab.jpg    1x,
+                    ./images/photo1_tab@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                srcset="
+                  ./images/photo1_desk.jpg    1x,
+                  ./images/photo1_desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+                <img src="./images/photo1_desk.jpg" alt="Фото співробітника 1" />
+              </picture>
               <h3 class="command__name">Ігор Дем'яненко</h3>
               <p class="command__position" lang="en">Product Designer</p>
               <ul class="command__net-list">
@@ -329,8 +364,31 @@
               </ul>
             </li>
             <li class="command__card">
-              <img src="./images/photo2.jpg" alt="Фото співробітника 2" />
-              <h3 class="command__name">Ольга Рєпіна</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo2_mob.jpg    1x,
+                    ./images/photo2_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo2_tab.jpg    1x,
+                    ./images/photo2_tab@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                srcset="
+                  ./images/photo2_desk.jpg    1x,
+                  ./images/photo2_desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+                <img src="./images/photo2_desk.jpg" alt="Фото співробітника 2" />
+              </picture>
+             <h3 class="command__name">Ольга Рєпіна</h3>
               <p class="command__position" lang="en">Frontend Developer</p>
               <ul class="command__net-list">
                 <li class="command__net-item">
@@ -364,7 +422,30 @@
               </ul>
             </li>
             <li class="command__card">
-              <img src="./images/photo3.jpg" alt="Фото співробітника 3" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo3_mob.jpg    1x,
+                    ./images/photo3_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo3_tab.jpg    1x,
+                    ./images/photo3_tab@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                srcset="
+                  ./images/photo3_desk.jpg    1x,
+                  ./images/photo3_desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+                <img src="./images/photo3_desk.jpg" alt="Фото співробітника 3" />
+              </picture>
               <h3 class="command__name">Микола Тарасов</h3>
               <p class="command__position" lang="en">Marketing</p>
               <ul class="command__net-list">
@@ -399,8 +480,31 @@
               </ul>
             </li>
             <li class="command__card">
-              <img src="./images/photo4.jpg" alt="Фото співробітника 4" />
-              <h3 class="command__name">Михайло Єрмаков</h3>
+              <picture>
+                <source
+                  srcset="
+                    ./images/photo4_mob.jpg    1x,
+                    ./images/photo4_mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/photo4_tab.jpg    1x,
+                    ./images/photo4_tab@2x.jpg 2x
+                  "
+                  media="(max-width: 1199px)"
+                />
+                <source
+                srcset="
+                  ./images/photo4_desk.jpg    1x,
+                  ./images/photo4_desk@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+                <img src="./images/photo4_desk.jpg" alt="Фото співробітника 4" />
+              </picture>
+                 <h3 class="command__name">Михайло Єрмаков</h3>
               <p class="command__position" lang="en">UI Designer</p>
               <ul class="command__net-list">
                 <li class="command__net-item">
@@ -436,8 +540,8 @@
           </ul>
         </div>
       </section>
-      <!-- клієнти -->
-      <!-- <section class="clients section">
+      <!-- Kлієнти -->
+      <section class="clients section">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -485,10 +589,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__box container">
         <div>
           <a href="#" class="logo footer__logo"
@@ -572,7 +676,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"

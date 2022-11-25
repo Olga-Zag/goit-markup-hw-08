@@ -6,7 +6,12 @@
     @extend %list;
     display: flex;
     gap: 30px;
-    justify-content: space-between;
+    // justify-content: space-between;
+
+    @media (max-width:1199px){
+        flex-wrap: wrap;
+    }
+    @media (max-width:479px) {}
 }
 
 .clients__icon {
@@ -22,7 +27,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -30,6 +35,13 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    @media (min-width:768px) {
+        width: 226px;
+             }
+    @media (min-width:1200px) {
+    width: 170px;
+   }
 }
 
 .clients__link {
