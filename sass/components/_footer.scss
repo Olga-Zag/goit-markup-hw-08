@@ -9,27 +9,63 @@
 
 .footer__box {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+
+    @media (min-width:1200px) {
+        align-items: baseline;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+}
+
+.footer__detail {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width:768px) {
+        flex-direction: row;
+    }
+
+    @media (min-width:768px) and (max-width:1199px) {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .footer__logo {
     display: block;
     margin-bottom: 20px;
-
     color: $main-back-color;
+    text-align: center;
+
+    @media (min-width:1199px) {
+        text-align: justify;
+    }
 }
 
 .footer__item {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    text-align: center;
+
+    @media (min-width:1200px) {
+        margin-bottom: 9px;
+        text-align: left;
+    }
 }
 
 .footer__item:last-of-type {
-    margin-bottom: 0;
+    display: block;
+    margin-bottom: 60px;
+
+    @media (min-width:768px) {
+        margin-bottom: 0px;
+    }
 }
 
 .footer__list {
-   @extend %list;
+    @extend %list;
 }
 
 .footer__address {
@@ -42,11 +78,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
-    &:focus{
-    color: $focus-color;
+    &:focus {
+        color: $focus-color;
+    }
 }
-}
+
 .footer__contact {
     font-size: 14px;
     line-height: 24px;
@@ -57,30 +95,39 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-&:hover,
-&:focus{
-   color: $focus-color;
-}
+
+    &:hover,
+    &:focus {
+        color: $focus-color;
+    }
 }
 
 .footer__net {
-    color: $main-back-color;
-    margin-left: 70px;
+    display: block;
+
+    @media (min-width:1200px) {
+        margin-left: 70px;
+    }
 }
 
 .footer__net-title {
     display: block;
+
+    color: $main-back-color;
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media (max-width:767px) {
+        text-align: center;
+    }
 }
 
 .footer__net-list {
     @extend %list;
     display: flex;
-
     justify-content: center;
     gap: 10px;
 }
@@ -90,24 +137,26 @@
     @extend %net-link;
     background-color: rgba(255, 255, 255, 0.1);
 
-&:hover,
-&:focus {
-    background-color: $focus-color;
+    &:hover,
+    &:focus {
+        background-color: $focus-color;
+    }
 }
-}
+
 .footer__net-icon {
     fill: currentColor;
 }
 
 .footer__form {
     display: block;
+    text-align: center;
     color: $main-back-color;
 }
 
 .footer__input {
-    display: block;
+    margin-bottom: 20px;
     left: 0;
-    width: 358px;
+    width: 100%;
     margin-right: 12px;
 
     padding: 16px 15px 16px;
@@ -118,21 +167,33 @@
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     outline: none;
+
+    @media (min-width:1200px) {
+        width: 295px;
+    }
 }
 
 .footer__email-title {
-    display: block;
+    text-align: center;
 
     font-weight: 700;
     font-size: 14px;
     line-height: calc(16 / 14);
     text-transform: uppercase;
-
     margin-bottom: 20px;
+    margin-top: 60px;
+
+    @media (min-width:1200px) {
+        text-align: left;
+        margin-top: 0;
+    }
 }
 
 .footer__input-email {
-    display: flex;
+
+    @media (min-width:1200px) {
+        display: flex;
+    }
 }
 
 .footer__button {
@@ -148,6 +209,6 @@
 .footer__send-icon {
     position: absolute;
     fill: $main-back-color;
-    align-self: center; 
+    align-self: center;
     margin-left: 10px;
 }

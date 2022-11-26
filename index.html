@@ -41,10 +41,6 @@
             type="button"
           >
             <svg width="40" height="40">
-              <!--            <use
-              class="header__button-close"
-              href="./images/icons.svg#icon-close-mob"
-            ></use> -->
               <use
                 class="header__button-burger"
                 href="./images/icons.svg#icon-burger-mob"
@@ -322,13 +318,16 @@
                   media="(max-width: 1199px)"
                 />
                 <source
-                srcset="
-                  ./images/photo1_desk.jpg    1x,
-                  ./images/photo1_desk@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-                <img src="./images/photo1_desk.jpg" alt="Фото співробітника 1" />
+                  srcset="
+                    ./images/photo1_desk.jpg    1x,
+                    ./images/photo1_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/photo1_desk.jpg"
+                  alt="Фото співробітника 1"
+                />
               </picture>
               <h3 class="command__name">Ігор Дем'яненко</h3>
               <p class="command__position" lang="en">Product Designer</p>
@@ -380,15 +379,18 @@
                   media="(max-width: 1199px)"
                 />
                 <source
-                srcset="
-                  ./images/photo2_desk.jpg    1x,
-                  ./images/photo2_desk@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-                <img src="./images/photo2_desk.jpg" alt="Фото співробітника 2" />
+                  srcset="
+                    ./images/photo2_desk.jpg    1x,
+                    ./images/photo2_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/photo2_desk.jpg"
+                  alt="Фото співробітника 2"
+                />
               </picture>
-             <h3 class="command__name">Ольга Рєпіна</h3>
+              <h3 class="command__name">Ольга Рєпіна</h3>
               <p class="command__position" lang="en">Frontend Developer</p>
               <ul class="command__net-list">
                 <li class="command__net-item">
@@ -438,13 +440,16 @@
                   media="(max-width: 1199px)"
                 />
                 <source
-                srcset="
-                  ./images/photo3_desk.jpg    1x,
-                  ./images/photo3_desk@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-                <img src="./images/photo3_desk.jpg" alt="Фото співробітника 3" />
+                  srcset="
+                    ./images/photo3_desk.jpg    1x,
+                    ./images/photo3_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/photo3_desk.jpg"
+                  alt="Фото співробітника 3"
+                />
               </picture>
               <h3 class="command__name">Микола Тарасов</h3>
               <p class="command__position" lang="en">Marketing</p>
@@ -496,15 +501,18 @@
                   media="(max-width: 1199px)"
                 />
                 <source
-                srcset="
-                  ./images/photo4_desk.jpg    1x,
-                  ./images/photo4_desk@2x.jpg 2x
-                "
-                media="(min-width: 1200px)"
-              />
-                <img src="./images/photo4_desk.jpg" alt="Фото співробітника 4" />
+                  srcset="
+                    ./images/photo4_desk.jpg    1x,
+                    ./images/photo4_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/photo4_desk.jpg"
+                  alt="Фото співробітника 4"
+                />
               </picture>
-                 <h3 class="command__name">Михайло Єрмаков</h3>
+              <h3 class="command__name">Михайло Єрмаков</h3>
               <p class="command__position" lang="en">UI Designer</p>
               <ul class="command__net-list">
                 <li class="command__net-item">
@@ -594,66 +602,68 @@
 
     <footer class="footer">
       <div class="footer__box container">
-        <div>
-          <a href="#" class="logo footer__logo"
-            ><span class="logo-span">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a
-                  class="footer__address"
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+        <div class="footer__detail">
+          <div>
+            <a href="#" class="logo footer__logo"
+              ><span class="logo-span">Web</span>Studio</a
+            >
+            <address>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    class="footer__address"
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__contact" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a class="footer__contact" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__net">
+            <p class="footer__net-title">Приєднуйтесь</p>
+            <ul class="footer__net-list">
+              <li>
+                <a href="" class="footer__net-link">
+                  <svg class="footer__net-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__contact" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li>
+                <a href="" class="footer__net-link">
+                  <svg class="footer__net-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a class="footer__contact" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li>
+                <a href="" class="footer__net-link">
+                  <svg class="footer__net-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="footer__net-link">
+                  <svg class="footer__net-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__net">
-          <p class="footer__net-title">Приєднуйтесь</p>
-          <ul class="footer__net-list">
-            <li>
-              <a href="" class="footer__net-link">
-                <svg class="footer__net-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__net-link">
-                <svg class="footer__net-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__net-link">
-                <svg class="footer__net-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="footer__net-link">
-                <svg class="footer__net-icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__form">
           <p class="footer__email-title">Підпишіться на розсилку</p>
