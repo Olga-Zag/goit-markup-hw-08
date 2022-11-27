@@ -1073,11 +1073,6 @@ img {
   font-size: 14px;
   line-height: 1.7142857143;
 }
-@media (max-width: 767px) {
-  .features__text .features__text:not(:last-child) {
-    padding-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features__text {
     display: block;
@@ -1088,6 +1083,18 @@ img {
   .features__text {
     display: block;
     width: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features__element {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features__element:last-of-type {
+    padding-bottom: 0px;
   }
 }
 

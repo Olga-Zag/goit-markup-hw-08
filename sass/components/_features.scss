@@ -53,13 +53,6 @@
     font-size: 14px;
     line-height: calc(24 / 14);
 
-    @media (max-width:767px) {
-
-        .features__text:not(:last-child) {
-            padding-bottom: 30px;
-        }
-    }
-
     @media screen and(min-width:768px) {
         display: block;
         width: 354px;
@@ -68,5 +61,17 @@
     @media screen and (min-width:1200px) {
         display: block;
         width: 270px;
+    }
+}
+
+.features__element {
+    @media (max-width:767px) {
+        padding-bottom: 30px;
+    }
+}
+
+.features__element:last-of-type {
+    @media (max-width:767px) {
+        padding-bottom: 0px;
     }
 }
