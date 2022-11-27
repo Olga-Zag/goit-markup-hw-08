@@ -1,5 +1,7 @@
 .clients {
-    padding-bottom: 94px;
+    @media (min-width:1200px) {
+        padding-bottom: 94px;
+    }
 }
 
 .clients__list {
@@ -8,9 +10,10 @@
     gap: 30px;
     // justify-content: space-between;
 
-    @media (max-width:1199px){
+    @media (max-width:1199px) {
         flex-wrap: wrap;
     }
+
     @media (max-width:479px) {}
 }
 
@@ -35,27 +38,30 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
- 
+
     @media (min-width:768px) {
         width: 226px;
-             }
+    }
+
     @media (min-width:1200px) {
-    width: 170px;
-   }
+        width: 170px;
+    }
 }
 
 .clients__link {
+
     &:hover,
     &:focus {
-    border-color: $focus-color;
+        border-color: $focus-color;
+    }
 }
-}
+
 .clients__link {
-&:hover, 
-&:focus {
-.clients__icon
-{
-    fill: $focus-color;
-}
-}
+
+    &:hover,
+    &:focus {
+        .clients__icon {
+            fill: $focus-color;
+        }
+    }
 }

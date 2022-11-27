@@ -3,19 +3,24 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
-     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     background-color: $footer-main-color;
     text-align: center;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/collegues.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media (min-width:1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 
     @media (max-width: 767px) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -78,11 +83,11 @@
     @media screen and (min-width:768px) {
         max-width: 360px;
     }
-    
+
     @media screen and (min-width:1200px) {
         max-width: 696px;
         font-size: 44px;
-    line-height: calc(60 / 44);
+        line-height: calc(60 / 44);
     }
 }
 
@@ -90,8 +95,8 @@
     @extend %button;
     padding: 8px 28px;
     min-width: 200px;
-    
-    @media screen and (min-width:1200px){
-    min-width: 216px;
-}
+
+    @media screen and (min-width:1200px) {
+        min-width: 216px;
+    }
 }
