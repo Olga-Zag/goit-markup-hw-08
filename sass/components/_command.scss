@@ -1,6 +1,6 @@
 .command {
     text-align: center;
-    padding-bottom: 94px;
+    padding-bottom: 60px;
     background-color: $add-back-color;
 }
 
@@ -76,6 +76,7 @@
 }
 
 .command__net-link {
+
     &:hover,
     &:focus {
         .command__net-icon {

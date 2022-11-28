@@ -1,16 +1,19 @@
 .menu__container {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+
   background-color: $main-back-color;
-  z-index: 2;
+  z-index: 9;
 
   opacity: 0;
   visibility: hidden;
-  justify-content: space-between;
   transition-property: opacity,
     visibility;
   transition-duration: 250ms;
